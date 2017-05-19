@@ -1,0 +1,21 @@
+APP=cmp2
+COURSE='CrossMedia Publishing II'
+AHSMAIL=brendero@student.arteveldehs.be
+
+# Database
+# --------
+DB_NAME=${APP}_local
+DB_USER=${APP}_db_user
+DB_PASS=${APP}_db_password
+DB_DUMP=../data/db_dumps
+DB_HOST=localhost
+DB_PREFIX=cmp2_
+
+# WordPress
+# ---------
+WP_LOCALE=nl_NL
+WP_PATH=wordpress
+WP_USER=${APP}_gebruiker
+WP_PASS=${APP}_wachtwoord
+WP_MAIL=${AHSMAIL}
+WP_URL=www.${APP}.local
