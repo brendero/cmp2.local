@@ -18,6 +18,29 @@
 
   <input type="checkbox" id="toggleMenu">
   <nav id="mobile-nav">
+    <h3 class="nav-title">Mannen weten waarom</h3>
+    <h4 class="nav-subtitle">Ons vakmanschap drink je met verstand</h4>
+    <?php wp_nav_menu( array(
+      'theme_location' => 'mobile-menu',
+      'container' => '',
+       ) ); ?>
+
+    <section class="social-media">
+        <div class="flex-row">
+          <a href="https://www.facebook.com/brentderoeck"><img class="social-media-img" src="<?php bloginfo('template_url')?>/assets/facebook-icon.png" alt="facebook icon"></a>
+          <a href="https://twitter.com/Da_Bront"><img class="social-media-img" src="<?php bloginfo('template_url')?>/assets/twitter-icon.png" alt="twitter icon"></a>
+        </div>
+        <div class="flex-row">
+          <a href="https://www.instagram.com/brent_da_pimpass_boiiii/"><img class="social-media-img" src="<?php bloginfo('template_url')?>/assets/instagram-icon.png" alt="instagram icon"></a>
+          <a href="#"><img class="social-media-img" src="<?php bloginfo('template_url')?>/assets/googleplus-icon.png" alt="google plus icon"></a>
+        </div>
+      </section>
+      <section class="misc-links">
+        <a href="#">Disclaimer</a>
+
+        <a href="#">Privacy</a>
+      </section>
+<!--
     <ul class="mobile-nav-items">
       <h3 class="nav-title">Mannen weten waarom</h3>
       <h4 class="nav-subtitle">Ons vakmanschap drink je met verstand</h4>
@@ -30,12 +53,12 @@
 
       <section class="social-media">
         <div class="flex-row">
-          <a href="#"><div class="social-media-img facebook"></div></a>
-          <a href="#"><div class="social-media-img twitter"></div></a>
+          <a href="#"><img class="social-media-img" src="<?php bloginfo('template_url')?>/assets/facebook-icon.png" alt="facebook icon"></a>
+          <a href="#"><img class="social-media-img" src="<?php bloginfo('template_url')?>/assets/twitter-icon.png" alt="twitter icon"></a>
         </div>
         <div class="flex-row">
-          <a href="#"><div class="social-media-img insta"></div></a>
-          <a href="#"><div class="social-media-img gplus"></div></a>
+          <a href="#"><img class="social-media-img" src="<?php bloginfo('template_url')?>/assets/instagram-icon.png" alt="instagram icon"></a>
+          <a href="#"><img class="social-media-img" src="<?php bloginfo('template_url')?>/assets/googleplus-icon.png" alt="google plus icon"></a>
         </div>
       </section>
 
@@ -44,17 +67,15 @@
 
         <a href="#">Privacy</a>
       </section>
-    </ul>
+    </ul>-->
     <ul class="navbar">
       <label for="toggleMenu"><li id="hamburger" class="hamburger"><i class="fa fa-bars" aria-hidden="true"></i></li></label>
     </ul>
 
   </nav>
   <nav>
-    <ul class="navbar">
-      <li class="nav-item"><a class="nav-link" href="#">Jupiler 0,0%</a></li>
-      <li class="nav-item"><a class="nav-link" href="#">Proef eens!</a></li>
-      <li class="nav-item"><a class="nav-link" href="#">Contact</a></li>
-      <li class="nav-item"><a class="nav-link" href="#">Veelgestelde vragen</a></li>
-    </ul>
+      <?php wp_nav_menu( array(
+      'theme_location' => 'primary-menu',
+      'container' => ''
+       ) ); ?>
   </nav>
