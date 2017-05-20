@@ -5,7 +5,8 @@ function register_menu_locations() {
     register_nav_menus(
       array(
         'primary-menu' => __( 'Primary Menu' ),
-        'sidebar-menu' => __( 'Sidebar Menu' )
+        'sidebar-menu' => __( 'Sidebar Menu' ),
+        'mobile-menu' => __('Mobile Menu')
       )
     );
 }
@@ -27,7 +28,7 @@ function register_sidebar_locations() {
     /* Register the 'primary' sidebar. */
     register_sidebar(
         array(
-            'id'            => 'primary-sidebar',
+            'class'         => 'aside-container',
             'name'          => __( 'Primary Sidebar' ),
             'description'   => __( 'A short description of the sidebar.' ),
             'before_widget' => '<div id="%1$s" class="widget %2$s">',
@@ -91,6 +92,7 @@ function taxonomies_portfolio() {
 add_action( 'init', 'taxonomies_portfolio', 0 );
 
 add_action( 'widgets_init', 'register_sidebar_locations' );
+
 add_theme_support('post-thumbnails');
 add_theme_support('custom-logo', array(
   'height' => 50,

@@ -28,7 +28,7 @@ nav{
   position: fixed;
 
 }
-.navbar{
+.navbar {
   margin:0;
   display: flex;
   flex-direction: row;
@@ -36,15 +36,23 @@ nav{
   background-color:black;
   justify-content: center;
 }
-.nav-item{
+#menu-primary {
+  margin:0;
+  display: flex;
+  flex-direction: row;
+  list-style-type: none;
+  background-color:black;
+  justify-content: center;
+}
+#menu-primary > li{
   margin:0 20px;
   padding:15px 10px 10px;
   border-bottom:solid 5px transparent;
 }
-.nav-item:hover, .active{
-  border-bottom:solid 5px white;
+#menu-primary > li:hover, .active{
+  border-bottom:solid 5px white !important;
 }
-.nav-link{
+.menu-item a{
   color:white;
   text-decoration:none;
   text-transform: uppercase;
@@ -68,8 +76,37 @@ nav{
 #mobile-nav{
   display: none;
   transition: 1s ease-in-out;
+  color:#666;
+  background-color:#1C1C1C;
+
 }
-.mobile-nav-items{
+#menu-mobile{
+  top:0px;
+  margin:0;
+  padding:0;
+  width:100%;
+  list-style-type: none;
+  font-family: 'Montserrat', sans-serif;
+}
+#menu-mobile > li {
+  color:white;
+  padding:20px 50px;
+  border-top:solid 1px #2D2D2D;
+  border-bottom:solid 1px #151515;
+  text-transform: uppercase;
+}
+.nav-title, .nav-subtitle{
+  margin:0;
+  text-align:center;
+}
+.nav-title{
+  padding:20px 10px;
+}
+.nav-subtitle{
+  margin:0 auto;
+  padding-bottom:15px;
+}
+/*.mobile-nav-items{
   top:0px;
   margin:0;
   padding:0;
@@ -96,7 +133,7 @@ nav{
 .nav-subtitle{
   margin:0 auto;
   padding-bottom:15px;
-}
+}*/
 
 #toggleMenu{
   display: none;
@@ -174,10 +211,10 @@ article.blog-item{
     background-image: url("../assets/tablet-banner.png");
   }
   aside {
-    display: none;
+    display: none !important;
   }
   #mobile-nav{
-    top:-489px;
+    top:-428px;
     display: block;
   }
   nav.desktop-nav{
@@ -187,6 +224,12 @@ article.blog-item{
     top: 200px;
     width:80%;
     margin:0 10%;
+  }
+  .menu{
+    justify-content: flex-end;
+  }
+  #menu-primary > li{
+    display: none;
   }
   .navbar{
     justify-content: flex-end;
