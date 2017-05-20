@@ -5,7 +5,7 @@ alias h='cd ~'
 alias c='clear'
 alias art='artisan'
 
-alias p='cd ~/1617.cmp2.local'
+alias p='cd ~/cmp2.local'
 p
 
 alias x='exit'

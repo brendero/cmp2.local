@@ -30,7 +30,7 @@ define('LOGGED_IN_SALT',   'UBw5Fb$t6Z5>N<b)yy h|l2 `I-|V&}Mlhce$sK6?rAL$PC%-.ro
 define('NONCE_SALT',       '*%wkNO:9I}0e:c!9v5s,#?L^(mWA!?Wci~X0K-A*48ut;Sk+Ij`^)U!.(c=:N$`X');
 
 
-$table_prefix = 'wp_';
+$table_prefix = 'cmp2_';
 
 /* That's all, stop editing! Happy blogging. */
 
