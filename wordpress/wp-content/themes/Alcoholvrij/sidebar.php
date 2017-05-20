@@ -1,10 +1,6 @@
 
   <aside>
     <div class="aside-container">
-      <!--
-      <h3 class="aside-header">Mannen weten waarom</h3>
-      <h4 class="aside-subheader">Ons vakmanschap drink je met verstand</h4>
-      -->
       <section class="blogs">
         <h3 class="aside-title">Blog</h3>
         <article class="blog-item"><a class="blog-link" href="#">Jupiler 0,0% nu ook beschikbaar in het buitenland</a></article>

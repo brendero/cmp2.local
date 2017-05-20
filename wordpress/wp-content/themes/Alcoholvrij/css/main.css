@@ -34,15 +34,32 @@ nav{
   width:100%;
   z-index: 99;
   position: fixed;
-
 }
-.navbar {
+.desktop-nav {
   margin:0;
+  list-style-type: none;
   display: flex;
   flex-direction: row;
   list-style-type: none;
   background-color:black;
   justify-content: center;
+}
+.menu > ul{
+  padding:0;
+  margin:0;
+}
+.page_item > a{
+  color: white;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+.page_item{
+  margin: 0 20px;
+  padding: 15px 10px 10px;
+  border-bottom: solid 5px transparent;
+}
+.page_item:hover{
+  border-bottom: solid 5px white;
 }
 #menu-primary {
   margin:0;
