@@ -5,16 +5,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title><?php bloginfo('name') | bloginfo('description')?></title>
-    <link type="icon" href="icon.png"> 
+    <link rel="icon" href="<?php bloginfo('template_url'); ?>/assets/icon.png">
     <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
-    <link href="<?php bloginfo('stylesheet_url'); ?>/css/normalize.css" rel="styleheet" type="text/css">
+    <link href="<?php bloginfo('template_url'); ?>/css/normalize.css" rel="styleheet" type="text/css">
     <script src="https://use.fontawesome.com/8fb3d2d265.js"></script>
     <?php wp_head();?>
 </head>
 <body>
-    		
+
 
   <header></header>
+
   <input type="checkbox" id="toggleMenu">
   <nav id="mobile-nav">
     <ul class="mobile-nav-items">
@@ -29,14 +30,15 @@
 
       <section class="social-media">
         <div class="flex-row">
-          <a href="#"><img class="social-media-img" src="<?php bloginfo('template_url')?>assets/facebook-icon.png" alt="facebook icon"></a>
-          <a href="#"><img class="social-media-img" src="<?php bloginfo('template_url')?>assets/twitter-icon.png" alt="twitter icon"></a>
+          <a href="#"><div class="social-media-img facebook"></div></a>
+          <a href="#"><div class="social-media-img twitter"></div></a>
         </div>
         <div class="flex-row">
-          <a href="#"><img class="social-media-img" src="<?php bloginfo('template_url')?>assets/instagram-icon.png" alt="instagram icon"></a>
-          <a href="#"><img class="social-media-img" src="<?php bloginfo('template_url')?>assets/googleplus-icon.png" alt="google plus icon"></a>
+          <a href="#"><div class="social-media-img insta"></div></a>
+          <a href="#"><div class="social-media-img gplus"></div></a>
         </div>
       </section>
+
       <section class="misc-links">
         <a href="#">Disclaimer</a>
 
@@ -50,7 +52,7 @@
   </nav>
   <nav>
     <ul class="navbar">
-      <li class="nav-item active"><a class="nav-link" href="#">Jupiler 0,0%</a></li>
+      <li class="nav-item"><a class="nav-link" href="#">Jupiler 0,0%</a></li>
       <li class="nav-item"><a class="nav-link" href="#">Proef eens!</a></li>
       <li class="nav-item"><a class="nav-link" href="#">Contact</a></li>
       <li class="nav-item"><a class="nav-link" href="#">Veelgestelde vragen</a></li>

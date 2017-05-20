@@ -2,32 +2,30 @@
 
 get_header();
 ?>
+<main class="container">
 
-<div class="Container">
-    <div id="main">
-    single
-        <?php 
-        if(have_posts()) 
+        <?php
+        if(have_posts())
         {
             while(have_posts())
             {
-                the_post();
-                //Print the title and the content of the current post
-                the_title('<h2>', '</h2>');
-                
-                the_time();
-                the_author();
+              the_post();
+              //Print the title and the content of the current post
+              the_title('<h2>', '</h2>');
 
-                the_content();
+              the_time();
+              the_author();
+
+              the_content();
             }
         }
         else
         {
             echo 'No content available';
         }
-        ?>  
-    </div>
-</div>
+        ?>
+  </main>
+
 
 <?php
     get_sidebar();

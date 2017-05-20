@@ -20,12 +20,12 @@
 
       <section class="social-media">
         <div class="flex-row">
-          <a href="#"><img class="social-media-img" src="assets/facebook-icon.png" alt="facebook icon"></a>
-          <a href="#"><img class="social-media-img" src="assets/twitter-icon.png" alt="twitter icon"></a>
+          <a href="#"><div class="social-media-img facebook"></div></a>
+          <a href="#"><div class="social-media-img twitter"></div></a>
         </div>
         <div class="flex-row">
-          <a href="#"><img class="social-media-img" src="assets/instagram-icon.png" alt="instagram icon"></a>
-          <a href="#"><img class="social-media-img" src="assets/googleplus-icon.png" alt="google plus icon"></a>
+          <a href="#"><div class="social-media-img insta"></div></a>
+          <a href="#"><div class="social-media-img gplus"></div></a>
         </div>
       </section>
 
