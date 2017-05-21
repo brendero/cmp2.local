@@ -337,3 +337,88 @@ span.your-email, span.your-message{
       width: 100%;
   }
 }
+
+
+/*Accordion css*/
+
+.accordions {
+  padding: 15px 0;
+  margin: 0 auto; 
+  }
+ 
+ .accordions .accordion {
+    background-color: white;
+    border: solid 1px #eee;
+    color: #444;
+    cursor: pointer;
+    padding: 18px;
+    max-width: 100%;
+    outline: none;
+    transition: 0.4s; 
+  }
+
+.accordions .accordion span {
+      margin-left: 10px;
+      font-size: 75%; 
+}
+
+.accordions .accordion.active,
+.accordions .accordion:hover {
+    background-color: black;
+    color: white;
+    border-color: #ccc; 
+}
+
+.accordions .accordion:after {
+    font-family: 'FontAwesome';
+    content: '\f107';
+    color: black;
+    font-size: 1.5rem;
+    font-weight: bold;
+    float: right;
+    margin-left: 5px; 
+}
+
+.accordions .accordion.active:after {
+    content: "\f105"; 
+    color: white;
+}
+
+.accordions article.panel {
+    padding: 0 18px;
+    background-color: #dedede;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+}
+
+.accordions article.panel .center {
+      text-align: center; 
+}
+
+.accordions article.panel .order {
+      margin: 20px 0; 
+}
+
+.accordions article.panel .order .total {
+        text-transform: uppercase;
+        font-weight: bold; 
+}
+
+.accordions article.panel .order .total span {
+    color: #104D93; 
+}
+
+.accordions article.panel .right {
+      float: right; 
+}
+
+.accordions article.panel p {
+      margin: 0.5rem;
+      color: #333; 
+}
+
+.accordions article.panel i {
+      color: #104D93;
+      margin: 0; 
+}
