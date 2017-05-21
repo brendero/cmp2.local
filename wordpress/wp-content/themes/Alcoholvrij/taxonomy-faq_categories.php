@@ -1,4 +1,7 @@
 <?php
+/*
+    Template Name: Faq Template
+*/
 
 get_header();
 ?>
@@ -9,15 +12,11 @@ get_header();
         <?php 
                 $args = array(
                     'post_type' => 'faq',
-                    'tax_query' => array(
-                        array(
-                            'taxonomy' => 'faq_category',
-                            )
-                        )
+                    
                     );
                     $faqs = get_posts( $args );
 
-                    foreach($faq as $faq) {
+                    foreach($faqs as $faq) {
                         setup_postdata($faq);
                         
                         echo '<div class="accordion">';
