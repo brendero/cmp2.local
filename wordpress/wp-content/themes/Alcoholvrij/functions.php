@@ -53,7 +53,6 @@ function custom_post_type_faq() {
     'search_items'       => __( 'Search FAQ items' ),
     'not_found'          => __( 'No FAQ item found' ),
     'not_found_in_trash' => __( 'No FAQ item found in the Trash' ), 
-    'parent_item_colon'  => '',
     'menu_name'          => 'FAQ'
   );
 

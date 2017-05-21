@@ -4,6 +4,6 @@
 <?php
     wp_footer();
 ?>  
-    <script src="<?php bloginfo('template_url');?>/js/script.js">
+    <script src="<?php bloginfo('template_url');?>/js/script.js" type="text/javascript"></script>
 </body>
 </html>

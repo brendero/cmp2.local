@@ -10,23 +10,21 @@ get_header();
     <section class="accordions">
                 <h3>Veelgestelde vragen</h3>
         <?php 
-                $args = array(
-                    'post_type' => 'faq',
+                $args = array('post_type' => 'faq');
                     
-                    );
                     $faqs = get_posts( $args );
 
-                    foreach($faqs as $faq) {
-                        setup_postdata($faq);
-                        
-                        echo '<div class="accordion">';
-                        echo the_title();
-                        echo '</div>';
+                        foreach($faqs as $faq) {
+                            setup_postdata($faq);
 
-                        echo '<article class="panel">';
-                        echo the_content('<p>', '</p>');
-                        echo '</article>';
-                    }
+                            echo '<div class="accordion">';
+                            the_title();
+                            echo '</div>';
+
+                            echo '<article class="panel">';
+                            echo the_content('<p>', '</p>');
+                            echo '</article>';
+                        }
 
             ?>
     </section>
