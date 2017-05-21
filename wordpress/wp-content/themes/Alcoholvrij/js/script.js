@@ -8,12 +8,24 @@ ready(function() {
 
 var App = {
     init: function() {
-        this.Alert();
+       var acc = document.getElementsByClassName("accordion");
+        this.DropAccordion(acc);
     },
-    Alert: function() {
-        alert('ji whoula');
+    DropAccordion: function (acc) {
+        var i;
+        for (i = 0; i < acc.length; i++) {
+            acc[i].onclick = function() {
+                this.classList.toggle("active");
+                var panel = this.nextElementSibling;
+                if (panel.style.maxHeight){
+                    panel.style.maxHeight = null;
+                } else {
+                    panel.style.maxHeight = panel.scrollHeight + "px";
+                }
+            }
+        }
     }
-}
+};
 
 App.init();
 });

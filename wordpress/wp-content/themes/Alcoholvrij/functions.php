@@ -40,56 +40,57 @@ function register_sidebar_locations() {
     /* Repeat register_sidebar() code for additional sidebars. */
 }
 
-function custom_post_type_portfolio() {
+function custom_post_type_faq() {
    $labels = array(
-    'name'               => _x( 'Portfolio', 'post type general name' ),
-    'singular_name'      => _x( 'Portfolio item', 'post type singular name' ),
+    'name'               => _x( 'FAQ', 'post type general name' ),
+    'singular_name'      => _x( 'FAQ', 'post type singular name' ),
     'add_new'            => _x( 'Add New', 'book' ),
-    'add_new_item'       => __( 'Add New Portfolio item' ),
-    'edit_item'          => __( 'Edit Portfolio item' ),
-    'new_item'           => __( 'New Portfolio item' ),
-    'all_items'          => __( 'All Portfolio items' ),
-    'view_item'          => __( 'View Portfolio item' ),
-    'search_items'       => __( 'Search Portfolio items' ),
-    'not_found'          => __( 'No portfolio item found' ),
-    'not_found_in_trash' => __( 'No portfolio item found in the Trash' ), 
+    'add_new_item'       => __( 'Add New FAQ item' ),
+    'edit_item'          => __( 'Edit FAQ item' ),
+    'new_item'           => __( 'New FAQ item' ),
+    'all_items'          => __( 'All FAQ items' ),
+    'view_item'          => __( 'View FAQ item' ),
+    'search_items'       => __( 'Search FAQ items' ),
+    'not_found'          => __( 'No FAQ item found' ),
+    'not_found_in_trash' => __( 'No FAQ item found in the Trash' ), 
     'parent_item_colon'  => '',
-    'menu_name'          => 'Portfolio'
+    'menu_name'          => 'FAQ'
   );
+
   $args = array(
     'labels'        => $labels,
-    'description'   => 'Holds our portfolio items specific data',
+    'description'   => 'Holds our FAQ items specific data',
     'public'        => true,
     'menu_position' => 5,
-	  'menu_icon'     => 'dashicons-portfolio',
-    'supports'      => array( 'title', 'editor', 'thumbnail', 'excerpt', 'comments', 'custom-fields'),
+	  'menu_icon'     => 'dashicons-format-status',
+    'supports'      => array( 'title', 'editor'),
     'has_archive'   => true
   );
-  register_post_type( 'portfolio', $args );
+  register_post_type( 'faq', $args );
 }
-add_action( 'init', 'custom_post_type_portfolio' );
+add_action( 'init', 'custom_post_type_faq' );
 
-function taxonomies_portfolio() {
+function taxonomies_faq() {
   $labels = array(
-    'name'              => _x( 'Portfolio Categories', 'taxonomy general name' ),
-    'singular_name'     => _x( 'Portfolio Category', 'taxonomy singular name' ),
-    'search_items'      => __( 'Search Portfolio Categories' ),
-    'all_items'         => __( 'All Portfolio Categories' ),
-    'parent_item'       => __( 'Parent Portfolio Category' ),
-    'parent_item_colon' => __( 'Parent Portfolio Category:' ),
-    'edit_item'         => __( 'Edit Portfolio Category' ), 
-    'update_item'       => __( 'Update Portfolio Category' ),
-    'add_new_item'      => __( 'Add New Portfolio Category' ),
-    'new_item_name'     => __( 'New Portfolio Category' ),
-    'menu_name'         => __( 'Portfolio Categories' )
+    'name'              => _x( 'FAQ Categories', 'taxonomy general name' ),
+    'singular_name'     => _x( 'FAQ Category', 'taxonomy singular name' ),
+    'search_items'      => __( 'Search FAQ Categories' ),
+    'all_items'         => __( 'All FAQ Categories' ),
+    'parent_item'       => __( 'Parent FAQ Category' ),
+    'parent_item_colon' => __( 'Parent FAQ Category:' ),
+    'edit_item'         => __( 'Edit FAQ Category' ), 
+    'update_item'       => __( 'Update FAQ Category' ),
+    'add_new_item'      => __( 'Add New FAQ Category' ),
+    'new_item_name'     => __( 'New FAQ Category' ),
+    'menu_name'         => __( 'FAQ Categories' )
   );
   $args = array(
     'labels' => $labels,
     'hierarchical' => true,
   );
-  register_taxonomy( 'portfolio_category', 'portfolio', $args );
+  register_taxonomy( 'faq_category', 'faq', $args );
 }
-add_action( 'init', 'taxonomies_portfolio', 0 );
+add_action( 'init', 'taxonomies_faq', 0 );
 
 add_action( 'widgets_init', 'register_sidebar_locations' );
 
