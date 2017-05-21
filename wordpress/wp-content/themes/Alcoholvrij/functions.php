@@ -101,3 +101,22 @@ add_theme_support('custom-logo', array(
 ));
 add_theme_support('title-tag');
 add_theme_support('custom-background');
+
+/* Custom login */
+function my_login_logo() { ?>
+    <style type="text/css">
+        #login h1 a, .login h1 a {
+          background-image: url(<?php echo get_stylesheet_directory_uri(); ?>/assets/logo.png);
+          width:160px;
+          height:160px;
+          background-size: contain;
+      		background-repeat: no-repeat;
+        }
+    </style>
+<?php }
+add_action( 'login_enqueue_scripts', 'my_login_logo' );
+
+function my_login_stylesheet() {
+    wp_enqueue_style( 'custom-login', get_stylesheet_directory_uri() . '/style.css' );
+}
+add_action( 'login_enqueue_scripts', 'my_login_stylesheet' );

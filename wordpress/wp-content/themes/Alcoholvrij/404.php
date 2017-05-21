@@ -1,6 +1,5 @@
 <?php
-
-get_header();
+  get_header();
 ?>
 <main class="container">
 
@@ -13,6 +12,6 @@ get_header();
     </div>
   </main>
 
-<?php
+  <?php
     get_footer();
-    ?>
+  ?>

@@ -1,8 +1,46 @@
 /*
 Theme Name: Alcholovrij
 Version: 1.0
-Description: Designed rond Jupiler 0.0%, dit is de eindopdracht voor CMP II van Manaus Transez en Brent De Roeck
+Description: Wordpress thema gebaseerd op Jupiler 0.0%. Dit is de eindopdracht voor CMP II door Manaus Transez en Brent De Roeck in opdracht van de Arteveldehogeschool.
 Author: Brent De Roeck & Manaus Transez
-Author URI: http://www.deroeckbrent.gent,
+Author URI: http://www.deroeckbrent.gent
 Tags: alcholvrij, bier, wordpress, reclame
 */
+
+
+body.login div#login p.message{
+  border-left-color: #c44b42;
+}
+body.login div#login form#loginform p.submit input{
+  background-color: #c44b42;
+  border:solid 1px #c44b42;
+  text-shadow: none;
+  box-shadow: none;
+}
+input{
+  border-radius: 5px !important;
+}
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus
+input:-webkit-autofill,
+textarea:-webkit-autofill,
+textarea:-webkit-autofill:hover
+textarea:-webkit-autofill:focus,
+select:-webkit-autofill,
+select:-webkit-autofill:hover,
+select:-webkit-autofill:focus {
+  -webkit-text-fill-color: black;
+  -webkit-box-shadow: 0 0 0px 1000px #F1EDED inset;
+  transition: background-color 5000s ease-in-out 0s;
+}
+input[type=checkbox]:checked:before{
+  color:#c44b42;
+}
+input:focus{
+  box-shadow: 0 0 2px #c44b42 !important;
+  border:solid 1px lightgrey !important;
+}
+p > a:hover{
+  color:#c44b42 !important;
+}
