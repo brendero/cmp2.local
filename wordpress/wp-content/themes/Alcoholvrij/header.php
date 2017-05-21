@@ -13,8 +13,7 @@
 </head>
 <body>
 
-
-  <header></header>
+<header></header>
 
   <input type="checkbox" id="toggleMenu">
   <nav id="mobile-nav">
@@ -36,9 +35,10 @@
         </div>
       </section>
       <section class="misc-links">
-        <a href="#">Disclaimer</a>
-
-        <a href="#">Privacy</a>
+        <?php wp_nav_menu( array(
+          'theme_location' => 'sidebar-menu',
+          'container' => '',
+           ) ); ?>
       </section>
 <!--
     <ul class="mobile-nav-items">

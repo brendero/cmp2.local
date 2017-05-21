@@ -52,7 +52,7 @@ function custom_post_type_portfolio() {
     'view_item'          => __( 'View Portfolio item' ),
     'search_items'       => __( 'Search Portfolio items' ),
     'not_found'          => __( 'No portfolio item found' ),
-    'not_found_in_trash' => __( 'No portfolio item found in the Trash' ), 
+    'not_found_in_trash' => __( 'No portfolio item found in the Trash' ),
     'parent_item_colon'  => '',
     'menu_name'          => 'Portfolio'
   );
@@ -77,7 +77,7 @@ function taxonomies_portfolio() {
     'all_items'         => __( 'All Portfolio Categories' ),
     'parent_item'       => __( 'Parent Portfolio Category' ),
     'parent_item_colon' => __( 'Parent Portfolio Category:' ),
-    'edit_item'         => __( 'Edit Portfolio Category' ), 
+    'edit_item'         => __( 'Edit Portfolio Category' ),
     'update_item'       => __( 'Update Portfolio Category' ),
     'add_new_item'      => __( 'Add New Portfolio Category' ),
     'new_item_name'     => __( 'New Portfolio Category' ),
@@ -101,4 +101,3 @@ add_theme_support('custom-logo', array(
 ));
 add_theme_support('title-tag');
 add_theme_support('custom-background');
-

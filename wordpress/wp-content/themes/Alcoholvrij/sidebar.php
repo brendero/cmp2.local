@@ -26,9 +26,10 @@
       </section>
 
       <section class="misc-links">
-        <a href="#">Disclaimer</a>
-
-        <a href="#">Privacy</a>
+        <?php wp_nav_menu( array(
+          'theme_location' => 'sidebar-menu',
+          'container' => '',
+           ) ); ?>
       </section>
     </div>
   </aside>
