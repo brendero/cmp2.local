@@ -259,6 +259,12 @@ article.blog-item{
     float: left;
 }
 
+/* Contact form */
+
+span.your-email, span.your-message{
+  width:50%;
+}
+
 
 /* Breakpoints*/
 @media screen and (max-width: 1000px) {
@@ -289,6 +295,7 @@ article.blog-item{
     display: none;
   }
   .navbar{
+    margin:0;
     justify-content: flex-end;
   }
   .nav-item{
