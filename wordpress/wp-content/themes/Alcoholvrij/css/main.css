@@ -10,6 +10,10 @@
 a{
   color: #c44b42;
 }
+.blog_time,.blog_author{
+  margin:0;
+  color:#666;
+}
 h1,h2,h3{
   font-weight: bolder;
   text-transform: uppercase;
@@ -294,7 +298,7 @@ span.your-email, span.your-message{
     display: none !important;
   }
   #mobile-nav{
-    top:-437px;
+    top:-496px;
     display: block;
   }
   nav.desktop-nav{
@@ -343,9 +347,9 @@ span.your-email, span.your-message{
 
 .accordions {
   padding: 15px 0;
-  margin: 0 auto; 
+  margin: 0 auto;
   }
- 
+
  .accordions .accordion {
     background-color: white;
     border: solid 1px #eee;
@@ -354,19 +358,19 @@ span.your-email, span.your-message{
     padding: 18px;
     max-width: 100%;
     outline: none;
-    transition: 0.4s; 
+    transition: 0.4s;
   }
 
 .accordions .accordion span {
       margin-left: 10px;
-      font-size: 75%; 
+      font-size: 75%;
 }
 
 .accordions .accordion.active,
 .accordions .accordion:hover {
     background-color: black;
     color: white;
-    border-color: #ccc; 
+    border-color: #ccc;
 }
 
 .accordions .accordion:after {
@@ -376,11 +380,11 @@ span.your-email, span.your-message{
     font-size: 1.5rem;
     font-weight: bold;
     float: right;
-    margin-left: 5px; 
+    margin-left: 5px;
 }
 
 .accordions .accordion.active:after {
-    content: "\f105"; 
+    content: "\f105";
     color: white;
 }
 
@@ -393,32 +397,32 @@ span.your-email, span.your-message{
 }
 
 .accordions article.panel .center {
-      text-align: center; 
+      text-align: center;
 }
 
 .accordions article.panel .order {
-      margin: 20px 0; 
+      margin: 20px 0;
 }
 
 .accordions article.panel .order .total {
         text-transform: uppercase;
-        font-weight: bold; 
+        font-weight: bold;
 }
 
 .accordions article.panel .order .total span {
-    color: #104D93; 
+    color: #104D93;
 }
 
 .accordions article.panel .right {
-      float: right; 
+      float: right;
 }
 
 .accordions article.panel p {
       margin: 0.5rem;
-      color: #333; 
+      color: #333;
 }
 
 .accordions article.panel i {
       color: #104D93;
-      margin: 0; 
+      margin: 0;
 }

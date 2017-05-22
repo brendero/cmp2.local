@@ -10,11 +10,18 @@
     while(have_posts())
     {
       the_post();
-      //Print the title and the content of the current post
-      the_title('<h2>', '</h2>');
+      
+      the_title('<h2 class="blog_title">', '</h2>');
+
+      echo "<br> <p class='blog_time'>";
 
       the_time();
+
+      echo "</p><p class='blog_author'> Gepost door ";
       the_author();
+      echo "</p>";
+
+      the_category(', ');
 
       the_content();
     }
