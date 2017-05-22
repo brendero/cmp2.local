@@ -13,7 +13,7 @@
 </head>
 <body>
 
-  <header></header>
+  <header style="background-image:url(<?php header_image();?>);"></header>
 
   <input type="checkbox" id="toggleMenu">
   <nav id="mobile-nav">

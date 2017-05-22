@@ -120,3 +120,10 @@ function my_login_stylesheet() {
     wp_enqueue_style( 'custom-login', get_stylesheet_directory_uri() . '/style.css' );
 }
 add_action( 'login_enqueue_scripts', 'my_login_stylesheet' );
+
+
+/* Custom Header */
+$args = array(
+	'default-image' => get_template_directory_uri() . '/assets/banner.png',
+);
+add_theme_support( 'custom-header', $args );
