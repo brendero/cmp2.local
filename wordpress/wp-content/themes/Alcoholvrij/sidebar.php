@@ -1,18 +1,22 @@
-
+<?php
+// the query
+$wpb_all_query = new WP_Query(array('post_type'=>'post', 'post_status'=>'publish', 'posts_per_page'=>-1)); ?>
 <aside>
   <div class="aside-container">
 
     <section class="blogs">
       <h3 class="aside-title">Blog</h3>
-      <article class="blog-item"><a class="blog-link" href="#">Jupiler 0,0% nu ook beschikbaar in het buitenland</a></article>
+      <?php if ( $wpb_all_query->have_posts() ) : ?>
 
-      <article class="blog-item"><a class="blog-link" href="#">Vanaf september is Jupiler 0,0% ook beschikbaar in alle voetbalstadions</a></article>
-
-      <article class="blog-item"><a class="blog-link" href="#">15% korting bij Colruyt op alle Jupiler producten. Proef nu het verschil!</a></article>
-
-      <article class="blog-item"><a class="blog-link" href="#">Doe mee aan onze wedstrijd en maak kans op een maand lang gratis Jupiler 0,0%</a></article>
-
-      <article class="blog-item"><a class="blog-link" href="#">Download onze nieuwe Jupiler Pro League app. Beschikbaar in de App Store</a></article>
+          <?php while ( $wpb_all_query->have_posts() ) : $wpb_all_query->the_post(); ?>
+            <?php
+              the_title('<article class="blog-item"><a class="blog-link" href="' . get_post_permalink() . ' ">', '</a></article>');
+            ?>
+          <?php endwhile; ?>
+      <?php wp_reset_postdata(); ?>
+    <?php else : ?>
+      <p><?php _e( 'Er zijn momenteel geen blogposts' ); ?></p>
+    <?php endif; ?>
     </section>
 
     <section class="social-media">

@@ -10,6 +10,9 @@
 a{
   color: #c44b42;
 }
+.blog_title{
+  margin-top: 50px;
+}
 .blog_time,.blog_author{
   margin:0;
   color:#666;
