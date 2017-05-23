@@ -36,5 +36,10 @@ $wpb_all_query = new WP_Query(array('post_type'=>'post', 'post_status'=>'publish
         'container' => '',
       ) ); ?>
     </section>
+    <?php
+      if ( !is_user_logged_in() ) {
+        echo '<a href="' , get_home_url() , '/login" style="text-align:center;display:block;">Log in</a>';
+      }
+    ?>
   </div>
 </aside>

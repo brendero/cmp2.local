@@ -94,11 +94,7 @@ add_action( 'init', 'taxonomies_faq', 0 );
 add_action( 'widgets_init', 'register_sidebar_locations' );
 
 add_theme_support('post-thumbnails');
-add_theme_support('custom-logo', array(
-  'height' => 50,
-  'width' => 50,
-  'flex-width' => true
-));
+add_theme_support('custom-logo');
 add_theme_support('title-tag');
 add_theme_support('custom-background');
 

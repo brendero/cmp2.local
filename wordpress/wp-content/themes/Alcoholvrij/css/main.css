@@ -187,7 +187,7 @@ nav{
 aside{
   right:0;
   top:240px;
-  width:20%;
+  width:280px;
   height:100%;
   position:fixed;
   background-color:#E5E5E5;
@@ -288,13 +288,68 @@ span.your-email, span.your-message{
   width:50%;
 }
 
+/* Comments */
+h3#comments{
+  margin-top:50px;
+}
+input[value="Post Comment"]{
+  color:white;
+  background-color:black;
+  padding:10px;
+  border:none;
+  border-radius: 0 !important;
+}
+textarea#comment{
+  max-width:100%;
+}
+ol.commentlist{
+  list-style-type:none;
+  padding:0px;
+  background-color: #DDD;
+}
+li.comment{
+  margin-bottom:20px;
+  padding:10px;
+}
+.odd{
+}
+.even{
+
+}
+ul.children{
+  margin:10px 0;
+  list-style-type: none;
+  background-color:#CCC;
+}
+ul.children>li{
+  padding:10px;
+}
+.comment-author > img{
+  border-radius:50%;
+  box-shadow: 0 0 2px #000;
+}
+.fn{
+  font-style:normal;
+  font-weight:bold;
+  position:relative;
+  top:-10px;
+}
+.says{
+  display: none;
+}
+label[for="comment"]{
+  display:none;
+}
+
+
+
 
 /* Breakpoints*/
 @media screen and (max-width: 1000px) {
   header{
     top:45px;
     height:150px;
-    background-image: url("../assets/tablet-banner.png");
+    background-image: url("../assets/tablet-banner.png") !important;
   }
   aside {
     display: none !important;
@@ -309,7 +364,7 @@ span.your-email, span.your-message{
   .container{
     top: 200px;
     width:80%;
-    margin:0 10%;
+    margin:0 5%;
   }
   .menu{
     justify-content: flex-end;
@@ -334,7 +389,7 @@ span.your-email, span.your-message{
 
 @media screen and (max-width: 650px) {
   header{
-    background-image: url("../assets/mobile-banner.png");
+    background-image: url("../assets/mobile-banner.png") !important;
   }
   .error-img {
       display: none;

@@ -10,7 +10,7 @@
     while(have_posts())
     {
       the_post();
-      
+
       the_title('<h2 class="blog_title">', '</h2>');
 
       echo "<br> <p class='blog_time'>";
@@ -24,6 +24,7 @@
       the_category(', ');
 
       the_content();
+      comments_template();
     }
   }
   else
