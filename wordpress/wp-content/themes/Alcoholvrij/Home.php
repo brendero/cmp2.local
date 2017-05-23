@@ -35,6 +35,8 @@
     echo 'No content available';
   }
   ?>
+
+  
 </main>
 
 <?php
