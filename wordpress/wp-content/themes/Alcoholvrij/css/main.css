@@ -311,11 +311,6 @@ li.comment{
   margin-bottom:20px;
   padding:10px;
 }
-.odd{
-}
-.even{
-
-}
 ul.children{
   margin:10px 0;
   list-style-type: none;
@@ -340,7 +335,18 @@ ul.children>li{
 label[for="comment"]{
   display:none;
 }
+form.comment-form > p > input, form.comment-form > p > textarea{
+  border:solid 1px #000;
+  padding:3px;
+  border-radius: 0 !important;
+}
 
+#wdi_feed_0  .wdi_load_more_spinner{
+  color:#c44b42 !important;
+}
+#wdi_feed_0 .wdi_load_more_wrap, #wdi_feed_0 .wdi_spinner_wrap {
+  border: solid 1px #c44b42 !important;
+}
 
 
 
